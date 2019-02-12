@@ -8,19 +8,19 @@ let arry = [];
 
 
 add.addEventListener('click', () => {
-    todoElement = `<div class ='todoElement bg-dark text-white'>${textTodo.value}<form style='display:none' class='form'><button contenteditable ='false' class ='edit btn btn-success'>Edit</button><button contenteditable ='false' class ='but btn btn-danger'>Delete</button></form><button class="rounded-circle border btn btn-xm btn-secondary glyphicon glyphicon-th-list"></button></div>`;
+    todoElement = `<div class ='todoElement bg-dark text-white'>${textTodo.value}<form style='display:none' class='animated slideInRight form'><button contenteditable ='false' class ='edit btn btn-success'>Edit</button><button contenteditable ='false' class ='but btn btn-danger'>Delete</button></form><button class="rounded-circle border btn btn-xm btn-secondary glyphicon glyphicon-th-list"></button></div>`;
     arry.push(todoElement)
     todoList.innerHTML += todoElement;
 })
 
 todo.addEventListener('click', (e) => {
     if(e.target.className === 'rounded-circle border btn btn-xm btn-secondary glyphicon glyphicon-th-list') {
-       $(e.target.parentNode.children).show(300) 
+       $(e.target.parentNode.children).show()
        
     }
         if(e.target.className === 'but btn btn-danger') {
             e.preventDefault();
-          $(e.target.parentNode.parentNode).hide(300)
+          $(e.target.parentNode.parentNode).hide()
         }
             if(e.target.className === 'edit btn btn-success') {
                 e.preventDefault();
