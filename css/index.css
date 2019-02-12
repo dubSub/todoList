@@ -25,7 +25,8 @@
     line-height: 30px;
     border-radius: 5%;
     border: 2px double dimgray;
-    position: relative; 
+    position: relative;
+    text-overflow: ellipsis;
 }
 .form {
     position: absolute;
